@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import Bot from './Bot/Bot';
+
+import Bot from './Bot/Bot'
+import robot from './images/RobotEmoji.png'
 
 const Main = () => {
   const [name, setName] = useState("")
@@ -31,6 +33,8 @@ const Main = () => {
 
   return (
     <div className="App">
+      <div><img src={robot} alt="robot" width="100" height="100"/></div>
+      <div className="header"><header>bot-o-mat</header></div>
       <form>
         <label>
           Name:

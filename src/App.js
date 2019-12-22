@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
+
 import Main from './Main'
-import './App.css';
+import './App.css'
 
 const App = () => {
   return (

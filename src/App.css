@@ -43,3 +43,9 @@
   color: white;
   min-height: 100vh;
 }
+
+.header {
+  color: black;
+  font-size: 50px;
+  font-family: "Helvetica"
+}
