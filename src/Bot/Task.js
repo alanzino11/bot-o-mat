@@ -5,6 +5,7 @@ import checkmark from '../images/checkmark.png'
 import './Bot.css'
 
 const Task = ({ task, eta }) => {
+  console.log(task)
   const [isLoading, setLoading] = useState(false)
   const [isCompleted, setCompleted] = useState(false)
   const seconds = eta / 1000;

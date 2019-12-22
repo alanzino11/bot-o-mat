@@ -13,6 +13,9 @@ const botData = {
     }, {
       task: "assemble the IKEA baker rack",
       eta: 4000
+    }, {
+      task: "heat up the trash", 
+      eta: 1000
     }]
   },
   unipedal: {
@@ -28,6 +31,9 @@ const botData = {
     }, {
       task: "vacuum the pool",
       eta: 4000
+    }, {
+      task: "fluff the dog",
+      eta: 10
     }]
   },
   quadrupedal: {
@@ -42,7 +48,10 @@ const botData = {
       eta: 8000
     }, {
       task: "iron the garbage",
-      eta: 8000
+      eta: 5000
+    }, {
+      task: "iron the garbage",
+      eta: 2000
     }]
   },
   arachnid: {
@@ -51,13 +60,16 @@ const botData = {
       eta: 8000
     }, {
       task: "cook the plant",
-      eta: 900
+      eta: 1000
     }, {
       task: "rake the car",
       eta: 900
     }, {
       task: "fluff the cat",
       eta: 10
+    }, {
+      task: "mow the sammich",
+      eta: 7000
     }]
   },
   radial: {
@@ -72,7 +84,10 @@ const botData = {
       eta: 3000
     }, {
       task: "feed the car",
-      eta: 900
+      eta: 1000
+    }, {
+      task: "walk the car",
+      eta: 10000
     }]
   },
   aeronautical: {
@@ -86,7 +101,11 @@ const botData = {
       task: "water the fridge",
       eta: 2000
     }, {
-      task: "pressue wash the computer"
+      task: "pressue wash the computer",
+      eta: 5000
+    }, {
+      task: "take out the laundry",
+      eta: 7000
     }]
   },
 }

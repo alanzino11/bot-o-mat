@@ -1,8 +1,9 @@
 .Bot {
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid white;
   width: 300px;
+  margin-bottom: 15px;
 }
 
 .botHeader {

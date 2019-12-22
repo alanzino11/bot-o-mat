@@ -12,7 +12,7 @@ const Bot = ({ name, type }) => {
         <h3 className="botHeader">{type}</h3>
       </header>
       {
-        botData[type].tasks.map(t => <Task task={t.type} eta={t.eta} key={t.eta}/>)
+        botData[type].tasks.map(t => <Task task={t.task} eta={t.eta} key={t.eta}/>)
       }
     </div>
   );

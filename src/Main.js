@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
 import Bot from './Bot/Bot'
-import robot from './images/RobotEmoji.png'
-import Background from './images/DiamondsTexture.jpg'
+import Background from './images/tealrobots2.png'
 
 const Main = () => {
   var background = {
@@ -45,15 +44,14 @@ const Main = () => {
 
   return (
     <div style={background}>
-      <div><img src={robot} alt="robot" width="100" height="100"/></div>
-      <div className="header"><header>bot-o-mat</header></div>
+      <div className="header"><header>BOT-O-MAT</header></div>
       <div>
         <form>
           <input type="text" value={name} onChange={handleNameChange} className="input" placeholder="enter a bot name"/>
         </form>
       </div>
       <form>
-      <select value={type} onChange={handleTypeChange}>
+      <select className="selector" value={type} onChange={handleTypeChange}>
         <option value="select">select</option>
         <option value="unipedal">unipedal</option>
         <option value="bipedal">bipedal</option>
@@ -64,7 +62,7 @@ const Main = () => {
       </select>
       </form>
       <form onSubmit={handleSubmit}>
-        <input type="submit" value="Add Bot" />
+        <input type="submit" value="add bot" className="addButton"/>
       </form>
       <div className="Bots">
         {
