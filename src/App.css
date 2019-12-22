@@ -37,15 +37,23 @@
   }
 }
 
-.Bot {
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  min-height: 100vh;
+.Bots {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
 }
 
 .header {
   color: black;
-  font-size: 50px;
-  font-family: "Helvetica"
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.input {
+  border-radius: 4px;
+  height: 30px;
+  font-size: 20px;
+  font-family: monospace;
 }

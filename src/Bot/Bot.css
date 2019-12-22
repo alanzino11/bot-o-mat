@@ -1,0 +1,21 @@
+.Bot {
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 300px;
+}
+
+.botHeader {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.image {
+  height: 25px;
+  width: 25px;
+}
+
+.task {
+  font: 18px;
+  font-family: monospace;
+}

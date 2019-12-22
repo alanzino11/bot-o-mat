@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
-import loading from '../images/loader.gif'
+import loading from '../images/loading.gif'
 import checkmark from '../images/checkmark.png'
+import './Bot.css'
 
 const Task = ({ task, eta }) => {
   const [isLoading, setLoading] = useState(false)
@@ -20,10 +21,10 @@ const Task = ({ task, eta }) => {
 
   return (
     <div>
-      <p>{task} {seconds} seconds</p>
+      <p className="task">{task} {seconds} {seconds > 1 ? "seconds": "second"}</p>
       {
-        isCompleted ? <img src={checkmark} alt="checkmark"/> :
-        (isLoading ? <img src={loading} alt="loading" /> : 
+        isCompleted ? <img src={checkmark} className="image" alt="checkmark"/> :
+        (isLoading ? <img src={loading} className="image" alt="loading" /> : 
         <button onClick={handleTaskCompletion} type="button">Complete Task</button>)
       }
     </div>
