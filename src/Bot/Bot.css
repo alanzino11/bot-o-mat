@@ -11,12 +11,30 @@
   font-weight: bold;
 }
 
+.completedTask {
+  font: 18px;
+  font-family: monospace;
+  color: gray;
+}
+
 .image {
   height: 25px;
   width: 25px;
 }
 
 .task {
-  font: 18px;
+  font: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.taskButton {
+  background-color: greenyellow;
+  border-color: "#E4F4FF";
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
   font-family: monospace;
 }
