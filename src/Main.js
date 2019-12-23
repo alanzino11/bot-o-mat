@@ -15,6 +15,7 @@ const Main = () => {
   const [name, setName] = useState("")
   const [type, setType] = useState("")
   const [bots, setBots] = useState([])
+  const [leaders, setLeaders] = useState([])
 
   const handleSubmit = (event) => {
     event.preventDefault();

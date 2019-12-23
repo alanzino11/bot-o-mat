@@ -23,8 +23,8 @@ const Task = ({ task, eta, onTaskCompletion }) => {
   return (
     <div>
       {
-        isCompleted ? <p className="completedTask">{task} {seconds} {seconds > 1 ? "seconds": "second"}</p> : 
-        <p className="task">{task} {seconds} {seconds > 1 ? "seconds": "second"}</p>
+        isCompleted ? <p className="completedTask">{task}: {seconds} {seconds > 1 ? "seconds": "second"}</p> : 
+        ( <div className="taskBody"><p className="task">{task}</p><p className="eta">: {seconds} {seconds > 1 ? "seconds": "second"}</p></div> )
       }
       {
         isCompleted ? <img src={checkmark} className="image" alt="checkmark"/> :
