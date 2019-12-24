@@ -10,7 +10,7 @@ const Bot = ({ name, type, setScore, id }) => {
 
   const incrementCompletedTasks = () => {
     setCompleteTasks(prev => prev + 1)
-    setScore(completeTasks, id)
+    setScore(id)
   }
 
   return (
