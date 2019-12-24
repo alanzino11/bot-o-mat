@@ -1,9 +1,10 @@
 .Bot {
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid white;
+  background-color: rgb(241, 255, 246);
+  border-radius: 10px;
+  border: 1px solid black;
   width: 300px;
   margin-bottom: 15px;
+  height: 550px;
 }
 
 .botHeader {
@@ -14,7 +15,7 @@
 .completeHeader {
   font-family: monospace;
   font-weight: bold;
-  color: rgb(44, 217, 41);
+  color: rgb(118, 255, 250);
 }
 
 .completedTask {
@@ -41,16 +42,13 @@
   font-weight: bold;
 }
 
-.task, .eta {
-  display: inline;
-}
-
 .taskBody {
   margin-bottom: 10px;
+  font-family: monospace;
 }
 
 .taskButton {
-  background-color: rgb(57, 245, 54);
+  background-color: rgb(118, 255, 250);
   border-color: "#E4F4FF";
   border-radius: 5px;
   width: 100px;

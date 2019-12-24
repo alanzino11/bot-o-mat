@@ -16,10 +16,16 @@
 
 .header {
   color: black;
-  font-size: 125px;
+  font-size: 100px;
   font-family: monospace;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.headerImage {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 15px;
 }
 
 .input {
@@ -42,6 +48,7 @@
   font-size: 18px;
   font-family: monospace;
   align-content: left;
+  display: flex;
 }
 
 .selector {
@@ -50,6 +57,10 @@
   width: 375px;
   margin-bottom: 20px;
   height: 40px;
+}
+
+.title {
+  text-align: center;
 }
 
 .toparea {

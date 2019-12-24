@@ -1,17 +1,9 @@
 import React, { useState } from 'react'
 
 import Bot from './Bot/Bot'
-import Background from './images/tealrobots2.png'
+import robot from './images/RobotEmoji.png'
 
 const Main = () => {
-  var background = {
-    backgroundImage: `url(${Background})`,
-    minHeight: "100vh",
-    textAlign: "center",
-    backgroundAttachment: "fixed",
-    backgroundSize: "cover",
-  }
-
   const [name, setName] = useState("")
   const [type, setType] = useState("")
   const [bots, setBots] = useState([])
@@ -70,15 +62,16 @@ const Main = () => {
   }
 
   return (
-    <div style={background}>
+    <div className="title">
       <div className="header"><header>BOT-O-MAT</header></div>
+      <img src={robot} className="headerImage"/>
       <div className="toparea">
-        <ul className="leaderboard">
+        {/* <ul className="leaderboard">
           <header><h1>LEADERS</h1></header>
           {
             leaders.map(leader => <p className="leader">{leader.name}: {leader.type}</p>)
           }
-        </ul>
+        </ul> */}
         <div className="botpicker">
           <form>
             <input type="text" value={name} onChange={handleNameChange} className="input" placeholder="enter a bot name"/>

@@ -16,8 +16,8 @@ const Bot = ({ name, type, setScore, id }) => {
   return (
     <div className="Bot">
       <header>
-        <h2 className="botHeader">{name}</h2>
-        <h3 className="botHeader">{type}</h3>
+        <h1 className="botHeader">{name}</h1>
+        <h2 className="botHeader">{type}</h2>
         { completeTasks > 4 ?
           <h3 className="completeHeader">Completed Tasks: {completeTasks}</h3> : 
           <h4 className="botHeader">Completed Tasks: {completeTasks}</h4>
