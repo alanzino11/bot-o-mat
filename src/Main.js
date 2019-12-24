@@ -28,11 +28,19 @@ const Main = () => {
       setBots([...bots, { // ...bots is a spread operator that makes a copy of all the current bots; then we append one more onto the array
         id: bots.length,
         name,
-        type
+        type,
+        score: 0
       }])
       setName("")
       setType("")
     }
+  }
+
+  const setScore = (score, id) => {
+    let newArr = [...bots]; // copying the old datas array
+    newArr[id].score = score; // replace e.target.value with whatever you want to change it to
+    setBots(newArr); 
+    console.log(bots[id])
   }
 
   const handleNameChange = (event) => {
@@ -67,7 +75,7 @@ const Main = () => {
       </form>
       <div className="Bots">
         {
-          bots.map(bot => <Bot key={bot.id} name={bot.name} type={bot.type}/>)
+          bots.map(bot => <Bot key={bot.id} id={bot.id} name={bot.name} type={bot.type} setScore={setScore}/>)
         }
       </div>
     </div>  
