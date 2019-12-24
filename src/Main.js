@@ -46,11 +46,11 @@ const Main = () => {
   }
 
   const setScore = (id) => {
-    let currScore = bots.find(x => x.id === id).score;
-    let newArr = [...bots]; // copying the old datas array
-    newArr[id].score = currScore+1;
-    setBots(newArr); 
-    updateLeaders()
+    //let currScore = bots.find(x => x.id === id).score;
+    //let newArr = [...bots]; // copying the old datas array
+    //newArr[id].score = currScore+1;
+    //setBots(newArr); 
+    //updateLeaders()
   }
 
   const handleNameChange = (event) => {
