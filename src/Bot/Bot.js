@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import { botData } from './botData'
-import robot from '../images/RobotEmoji.png'
 import Task from './Task'
 import './Bot.css'
 
@@ -9,8 +8,8 @@ const Bot = ({ name, type, setScore, id }) => {
   const [completeTasks, setCompleteTasks] = useState(0)
 
   const incrementCompletedTasks = () => {
-    setCompleteTasks(prev => prev + 1)
     setScore(id)
+    setCompleteTasks(prev => prev + 1)
   }
 
   return (

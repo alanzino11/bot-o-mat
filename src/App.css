@@ -34,6 +34,7 @@
   font-size: 30px;
   font-family: monospace;
   margin-bottom: 20px;
+  border-width: 2px;
 }
 
 .leaderboard {
@@ -73,7 +74,7 @@
 
 .addButton {
   background-color: white;
-  border-color: "#E4F4FF";
+  border-color: black;
   border-radius: 5px;
   width: 200px;
   height: 40px;

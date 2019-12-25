@@ -8,6 +8,7 @@ const Main = () => {
   const [type, setType] = useState("")
   const [bots, setBots] = useState([])
   const [leaders, setLeaders] = useState([])
+  const [l, setL] = useState([])
 
   const search = (name, type) => {
     for (let i = 0; i < bots.length; i++) {
@@ -15,12 +16,6 @@ const Main = () => {
         return true
     }
     return false
-  }
-
-  const updateLeaders = () => {
-    bots.sort((a, b) => { return b.score - a.score; } );
-    setLeaders(bots.slice(0, 3))
-    console.log(leaders)
   }
 
   const handleSubmit = (event) => {
@@ -46,12 +41,23 @@ const Main = () => {
   }
 
   const setScore = (id) => {
-    //let currScore = bots.find(x => x.id === id).score;
-    //let newArr = [...bots]; // copying the old datas array
-    //newArr[id].score = currScore+1;
-    //setBots(newArr); 
-    //updateLeaders()
+    console.log("setScore called")
+    let currScore = bots.find(x => x.id === id).score; // finds the bot id that has just changed its score
+    console.log("Bot " + id + " has just changed")
+    let newArr = [...bots]; // copying the old datas array
+    newArr[id].score = currScore+1;
+    setLeaders(newArr); 
+    updateLeaders()
   }
+
+  const updateLeaders = () => {
+    leaders.sort((a, b) => { return a.score - b.score; } );
+    let newArr = leaders.slice(Math.max(leaders.length - 3, 0));
+    newArr.reverse()
+    setL(newArr) // 0 1 2 3 4
+  }
+
+  console.log(l)
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -64,12 +70,12 @@ const Main = () => {
   return (
     <div className="title">
       <div className="header"><header>BOT-O-MAT</header></div>
-      <img src={robot} className="headerImage"/>
+      <img src={robot} className="headerImage" alt="robot"/>
       <div className="toparea">
         {/* <ul className="leaderboard">
           <header><h1>LEADERS</h1></header>
           {
-            leaders.map(leader => <p className="leader">{leader.name}: {leader.type}</p>)
+            l.map(l => <p className="leader">{l.name}: {l.type}    Score: {l.score}</p>)
           }
         </ul> */}
         <div className="botpicker">
