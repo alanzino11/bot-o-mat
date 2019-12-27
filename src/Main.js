@@ -47,17 +47,15 @@ const Main = () => {
     let newArr = [...bots]; // copying the old datas array
     newArr[id].score = currScore+1;
     setLeaders(newArr); 
-    updateLeaders()
+    //updateLeaders()
   }
 
-  const updateLeaders = () => {
-    leaders.sort((a, b) => { return a.score - b.score; } );
-    let newArr = leaders.slice(Math.max(leaders.length - 3, 0));
-    newArr.reverse()
-    setL(newArr) // 0 1 2 3 4
-  }
-
-  console.log(l)
+  // const updateLeaders = () => {
+  //   leaders.sort((a, b) => { return a.score - b.score; } );
+  //   let newArr = leaders.slice(Math.max(leaders.length - 3, 0));
+  //   newArr.reverse()
+  //   setL(newArr) // 0 1 2 3 4
+  // }
 
   const handleNameChange = (event) => {
     setName(event.target.value);
