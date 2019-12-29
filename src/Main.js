@@ -40,23 +40,6 @@ const Main = () => {
     }
   }
 
-  const setScore = (id) => {
-    console.log("setScore called")
-    let currScore = bots.find(x => x.id === id).score; // finds the bot id that has just changed its score
-    console.log("Bot " + id + " has just changed")
-    let newArr = [...bots]; // copying the old datas array
-    newArr[id].score = currScore+1;
-    setLeaders(newArr); 
-    //updateLeaders()
-  }
-
-  // const updateLeaders = () => {
-  //   leaders.sort((a, b) => { return a.score - b.score; } );
-  //   let newArr = leaders.slice(Math.max(leaders.length - 3, 0));
-  //   newArr.reverse()
-  //   setL(newArr) // 0 1 2 3 4
-  // }
-
   const handleNameChange = (event) => {
     setName(event.target.value);
   }
@@ -98,7 +81,7 @@ const Main = () => {
       </div>
       <div className="Bots">
         {
-          bots.map(bot => <Bot key={bot.id} id={bot.id} name={bot.name} type={bot.type} setScore={setScore}/>)
+          bots.map(bot => <Bot key={bot.id} id={bot.id} name={bot.name} type={bot.type}/>)
         }
       </div>
     </div>  

@@ -4,11 +4,10 @@ import { botData } from './botData'
 import Task from './Task'
 import './Bot.css'
 
-const Bot = ({ name, type, setScore, id }) => {
+const Bot = ({ name, type, id }) => {
   const [completeTasks, setCompleteTasks] = useState(0)
 
   const incrementCompletedTasks = () => {
-    setScore(id)
     setCompleteTasks(prev => prev + 1)
   }
 
