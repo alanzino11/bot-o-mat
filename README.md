@@ -1,8 +1,8 @@
-Hello! 🤖
+hello! 🤖
 
-For my bot-o-mat project I decided to create a React app. I also made a github page for the application, which can be found at https://alanzino11.github.io/bot-o-mat/.
+for my bot-o-mat project I decided to create a React app. I also made a github page for the application, which can be found at https://alanzino11.github.io/bot-o-mat/.
 
-To get started with the app:
+to get started with the app:
 
 install Node from https://nodejs.org/en/download/
 
